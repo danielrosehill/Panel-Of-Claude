@@ -1,5 +1,9 @@
 # Panel Of Claudes: Experimentary Model For A Multi-Agent Simulated "Debate" (Notes)
 
+![Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-5A67D8?style=flat&logo=anthropic&logoColor=white)
+[![Claude Code Projects](https://img.shields.io/badge/Index-Claude%20Code%20Projects-blue?style=flat)](https://github.com/danielrosehill/Claude-Code-Repos-Index)
+[![GitHub Master Index](https://img.shields.io/badge/Index-GitHub%20Master-green?style=flat)](https://github.com/danielrosehill/Github-Master-Index)
+
 Use cases: communications; argument modelling; idea exploration.
 
 ## TL;DR
@@ -50,6 +54,13 @@ Then:
 
 Potential down the road wacky outgrowths of this idea:
 
-- Agents are instructed to adopt the persona of an ideologue to simulate debates by real personaltiies 
-- Multiple panels are assembled as a virtual conference of agents. The minutes from one panel could be fed to another.  
+- Agents are instructed to adopt the persona of an ideologue to simulate debates by real personaltiies
+- Multiple panels are assembled as a virtual conference of agents. The minutes from one panel could be fed to another.
 - Responses could be streamed or avatar-ised for live viewing
+
+---
+
+## Author
+
+**Daniel Rosehill**
+To view an index of my Claude Code related projects, [click here](https://github.com/danielrosehill/Claude-Code-Repos-Index)
