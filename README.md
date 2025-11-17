@@ -10,15 +10,19 @@ Use cases: communications; argument modelling; idea exploration.
 
 Notes/holding repo for an idea that came to me after having some fun (and learning a bit!) from an experimentary Claude model that approximated the functionality of the CMV (change my view) Subreddit.
 
-My thought was: that was cool. But why not take it further: a subagent takes your viewpoint and buttresses it with research. This is your "advocate."
+My thought was: that was cool. But why not take it further.
 
-The next subagent is the CMV subagent.
+It's satisfying to have AI argue against your viewpoints to open you up to new ways of thinking. Equally, to get a rounded exposition of an argument, we need the 'for' side too. Why not create a second agent to research and support your view, *then* the CMV/oppositional agent has some real "meat" to wade through?
 
-Finally: when humans assemble panels with divergent viewpoints, there's usually a moderator. Fortunately AI agents can't scream at one another (or wose!) so the role of the moderator here is a bit more civil: it summarises the viewpoints. 
+Finally: when humans assemble panels with divergent viewpoints, there's usually a moderator. 
+
+Fortunately AI agents can't scream at one another (or wose!) so the role of the moderator here is a bit more civil: it summarises the viewpoints. 
+
+This is the sketch for the implementation in full which should be fairly straightforward to implement either with Claude Code itself (in miniature) or with any multiagent framework like Crew AI in a more code-defined setup.
 
 ## Implementation: The Panel 
 
-My idea to make this interesting was to try to use context intelligently and sequentially:
+I thought of this approach, specifically, because it allows for a sequential flow of context, modelling, approximately, how real panels typically work:
 
 - The Advocate gets a pretty barebones articulation of a viewpoint from the user. Like: "trade sanctions have been proven, throughout history, to be ineffective." 
 - The Advocate reformats that viewpoint into a prepared "speech": much as if it were preparing for a real debate. 
