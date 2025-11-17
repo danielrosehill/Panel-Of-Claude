@@ -1,0 +1,70 @@
+# Panel Of Claudes: Experimentary Model For A Multi-Agent Simulated "Debate" (Notes)
+
+![Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-5A67D8?style=flat&logo=anthropic&logoColor=white)
+[![Claude Code Projects](https://img.shields.io/badge/Index-Claude%20Code%20Projects-blue?style=flat)](https://github.com/danielrosehill/Claude-Code-Repos-Index)
+[![GitHub Master Index](https://img.shields.io/badge/Index-GitHub%20Master-green?style=flat)](https://github.com/danielrosehill/Github-Master-Index)
+
+Use cases: communications; argument modelling; idea exploration.
+
+## TL;DR
+
+Notes/holding repo for an idea that came to me after having some fun (and learning a bit!) from an experimentary Claude model that approximated the functionality of the CMV (change my view) Subreddit.
+
+My thought was: that was cool. But why not take it further.
+
+It's satisfying to have AI argue against your viewpoints to open you up to new ways of thinking. Equally, to get a rounded exposition of an argument, we need the 'for' side too. Why not create a second agent to research and support your view, *then* the CMV/oppositional agent has some real "meat" to wade through?
+
+Finally: when humans assemble panels with divergent viewpoints, there's usually a moderator. 
+
+Fortunately AI agents can't scream at one another (or wose!) so the role of the moderator here is a bit more civil: it summarises the viewpoints. 
+
+This is the sketch for the implementation in full which should be fairly straightforward to implement either with Claude Code itself (in miniature) or with any multiagent framework like Crew AI in a more code-defined setup.
+
+## Implementation: The Panel 
+
+I thought of this approach, specifically, because it allows for a sequential flow of context, modelling, approximately, how real panels typically work:
+
+- The Advocate gets a pretty barebones articulation of a viewpoint from the user. Like: "trade sanctions have been proven, throughout history, to be ineffective." 
+- The Advocate reformats that viewpoint into a prepared "speech": much as if it were preparing for a real debate. 
+- CMV agent gets the debate topic and Advocate's speech so that it has a change to rebut its points directly 
+- Advocate can add a short closing statement so that both participants have an opportunity to rebut 
+
+The panel "proceedings" get passed to the Moderator: 
+- Topic 
+- Prompt 
+- Speeches
+
+From this, moderator generates a detailed proceedings/minutes of the panel including direct quotes from "speeches."
+
+## Implementation: Outputs 
+
+Outputs:
+
+- JSON for machine-readable outputs 
+- Moderator's report as markdown 
+
+Then:
+
+- Markdown to PDF and ePub for reading material 
+
+## Podcast 
+
+- Formatting agent gets the markdown report and formats it into SSML adding the personality of a podcast host 
+- SSML gets narrated by TTS 
+
+---
+
+# AI Agent Conference
+
+Potential down the road wacky outgrowths of this idea:
+
+- Agents are instructed to adopt the persona of an ideologue to simulate debates by real personaltiies
+- Multiple panels are assembled as a virtual conference of agents. The minutes from one panel could be fed to another.
+- Responses could be streamed or avatar-ised for live viewing
+
+---
+
+## Author
+
+**Daniel Rosehill**
+To view an index of my Claude Code related projects, [click here](https://github.com/danielrosehill/Claude-Code-Repos-Index)
