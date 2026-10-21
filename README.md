@@ -2,7 +2,7 @@
 
 ![Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-5A67D8?style=flat&logo=anthropic&logoColor=white)
 [![Claude Code Projects](https://img.shields.io/badge/Index-Claude%20Code%20Projects-blue?style=flat)](https://github.com/danielrosehill/Claude-Code-Repos-Index)
-[![GitHub Master Index](https://img.shields.io/badge/Index-GitHub%20Master-green?style=flat)](https://github.com/danielrosehill/Github-Master-Index)
+[![GitHub Master Index](https://img.shields.io/badge/Index-GitHub%20Master-green?style=flat)](https://github.com/danielrosehill/Start-Here)
 
 **Use Cases:** Multi-Perspective Analysis | Idea Exploration | Critical Thinking | Research Synthesis | Decision Support
 
